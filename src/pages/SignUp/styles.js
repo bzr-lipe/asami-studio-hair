@@ -21,8 +21,8 @@ export const Content = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 208px;
-  margin-bottom: 50px;
+  height: 170px;
+  margin-bottom: 20px;
 `;
 
 export const LoginForm = styled.form`
@@ -75,9 +75,22 @@ export const InputButton = styled.input`
   color: #fff;
   transition: 0.5s;
   border: none;
-  
+
   &:hover {
     transform: translateY(-10%);
     box-shadow: 5px 10px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+
+export const Login = styled.div`
+  font-family: 'Anek Latin';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+  p {
+    color: #00000080;
   }
 `;

@@ -11,8 +11,8 @@ export default function HomePage() {
       <S.Content>
         <S.Logo src='/images/logo.png'/>
         <S.LoginForm>
-          <S.Input placeholder='email' type='text' required/>
-          <S.Input placeholder='senha' type='password' required/>
+          <S.Input placeholder='email' type='email' name='email'required/>
+          <S.Input placeholder='senha' type='password' name='senha' required/>
           <Button type='submit'>
             entrar
           </Button>

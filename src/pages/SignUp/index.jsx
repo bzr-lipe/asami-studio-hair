@@ -1,5 +1,7 @@
 import React from 'react';
 import * as S from './styles';
+import Button from 'components/Button';
+import { Link } from 'react-router-dom';
 
 export default function SignUpPage() {
   const handlePhone = (event) => {
@@ -19,8 +21,9 @@ export default function SignUpPage() {
     <S.SignUpPage>
       <S.Wallpaper />
       <S.Content>
+        <S.Logo src='/images/logo.png'/>
         <S.LoginForm id="signUpForm"> 
-          <S.Input type='text' placeholder='nome completo' name='nome'/>
+          <S.Input type='text' placeholder='nome completo' name='nome' required/>
           <S.InputLine>
             <S.Input type='date' name='data' required/>
             <select placeholder='sexo' required>
@@ -33,7 +36,14 @@ export default function SignUpPage() {
           <S.Input type='tel' placeholder='Celular' maxlength='15' onKeyDown={handlePhone} name='celular' required/>
           <S.Input type='email' placeholder='email' name='email' required/>
           <S.Input type='password' placeholder='senha' name='senha' required/>
+          <Button>criar conta</Button>
         </S.LoginForm>
+        <S.Login>
+          <p>JÁ POSSUI CONTA?</p>
+          <Link to='/'>
+            <Button>Entrar</Button>
+          </Link>
+        </S.Login>
       </S.Content>
     </S.SignUpPage>
   )
