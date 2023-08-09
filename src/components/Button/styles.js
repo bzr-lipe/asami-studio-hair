@@ -1,0 +1,21 @@
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+export const Button = styled(Link)`
+  background-color: #EA6927;
+  padding: 11px 41px;
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 136px;
+  font-family: 'Anek Latin';
+  font-weight: 400;
+  color: #fff;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translateY(-10%);
+    box-shadow: 5px 10px 3px 0px rgba(0, 0, 0, 0.25);
+
+  }
+`
