@@ -13,7 +13,7 @@ export default function Navbar() {
         <S.MenuItem to='servicos'>
           Serviços
         </S.MenuItem>
-        <S.MenuItem to='fale-conosco'>
+        <S.MenuItem to='contato'>
           Fale conosco
         </S.MenuItem>
         <Button to='/agendamento'>

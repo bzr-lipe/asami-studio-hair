@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Navbar = styled.div`
+  position: absolute;
   padding: 10px 0;
   width: 100%;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFF;
 `;
 
 export const Logo = styled.img`
