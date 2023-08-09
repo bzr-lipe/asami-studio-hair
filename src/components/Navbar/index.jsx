@@ -16,9 +16,11 @@ export default function Navbar() {
         <S.MenuItem to='contato'>
           Fale conosco
         </S.MenuItem>
-        <Button to='/agendamento'>
-          Agende aqui
-        </Button>
+        <Link to='/agendamento' >
+          <Button>
+            Agende aqui
+          </Button>
+        </Link>  
       </S.Menu>
     </S.Navbar>
   )

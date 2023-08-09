@@ -4,12 +4,20 @@ export const SignUpPage = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 440px) {
+    max-width: 100%;
+  }
 `;
 
 export const Wallpaper = styled.div`
   width: 50%;
   background: url('images/homeBackground.png');
   background-size: cover;
+
+  @media (max-width: 440px) {
+    display: none;
+  }
 `;
 
 export const Content = styled.div`
@@ -18,11 +26,20 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 440px) {
+    width: 70%;
+    margin: 0 auto;
+  }
 `;
 
 export const Logo = styled.img`
   height: 170px;
   margin-bottom: 20px;
+
+  @media (max-width: 440px) {
+    height: 100px;
+  }
 `;
 
 export const LoginForm = styled.form`
@@ -30,6 +47,10 @@ export const LoginForm = styled.form`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 440px) {
+    max-width: 100%;
+  }
 `;
 
 export const InputLine = styled.div`
@@ -50,6 +71,7 @@ export const InputLine = styled.div`
     text-transform: uppercase;
     font-family: 'Anek Latin';
   }
+  
 `
 
 export const Input = styled.input`
@@ -61,6 +83,10 @@ export const Input = styled.input`
   padding: 0 30px;
   text-transform: uppercase;
   font-family: 'Anek Latin';
+
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 `;
 
 export const InputButton = styled.input`

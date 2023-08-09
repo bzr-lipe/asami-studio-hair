@@ -15,6 +15,11 @@ export const Navbar = styled.div`
 export const Logo = styled.img`
   margin-left: 100px;
   width: 150px;
+
+  @media (max-width: 440px) {
+    margin-left: 30px;
+    width: 50px;
+  }
 `;
 
 export const Menu = styled.ul`
@@ -23,6 +28,10 @@ export const Menu = styled.ul`
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 440px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled(Link)`

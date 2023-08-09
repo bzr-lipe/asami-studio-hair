@@ -40,7 +40,7 @@ export default function SignUpPage() {
         </S.LoginForm>
         <S.Login>
           <p>JÁ POSSUI CONTA?</p>
-          <Link to='/'>
+          <Link to='/agendamento'>
             <Button>Entrar</Button>
           </Link>
         </S.Login>
